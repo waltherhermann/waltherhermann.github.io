@@ -1,0 +1,1407 @@
+﻿
+<!doctype html>
+<html lang="pt-br">
+	<head>
+			<meta http-equiv="content-type"  content="text/html"; charset="utf-8"> <!-- conteúdo e tipo de caracteres da língua portuguesa -->
+			<title>Walther H. Kerth | Desenvolvimento de Líderes e Executivos</title>
+			<!-- Colocar tags de identificação do conteúdo do site -->
+			<link rel="stylesheet" type="text/css" href="css/estilo.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">  <!-- a colocar no CSS: font-family: 'Open Sans', sans-serif; -->
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+			<link rel="icon" type="img/favicon.ico"> <!-- ícone que aparece na barra de navegação: 30 x 30 pixel -->
+			<meta name="description" content="Perfil Profissional de Walther Hermann Kerth Jr., educador, palestrante, coach e escritor, especialista em processos de aprendizagem." />
+			<meta name="keywords" content="desenvolvimento de líderes, competências mentais, competências emocionais, competências comportamentais, treinamentos, coaching."/>
+			<meta name="author" content="Walther H. Kerth">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!-- Compatibilidade -->
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Indica que o site é responsivo e a escala -->
+			<meta property="og:locale" content="pt_BR"> <!--Metas Tags para Facebook -->
+			<meta property="og:type" content="website">
+			<meta property="og:title" content="Consultor Especialista no Desenvolvimento de Líderes | Recursos para o desenvolvimento pessoal e profissional">
+			<meta property="og:description" content="Mais de trinta anos de experiência em educação e desenvolvimento profissional de adultos">
+			<meta property="og:url" content="http://www.waltherkerth.com.br">
+			<meta property="og:site_name" content="Perfil profissional de Walther H. Kerth Jr.">
+
+		<style>
+			* {
+				box-sizing: 
+				border-box; 
+			}
+			body, html {
+				margin: 0; 
+				padding: 0; 
+				font-family: open sans, 
+				sans-serif; 
+			}
+			body {
+				overflow-x: hidden;
+			}
+			header {
+				position: relative; 
+				width: 100%; 
+				height: 120px; 
+				top: 0px; 
+				left: 0px; 
+				margin-top: 50px;
+			}
+			.topo {
+				position: absolute;
+				top: 0;
+			}
+			.top {
+				position: absolute; 
+				width: 100%; 
+				top: 10px; 
+				display: flex; 
+				align-items: center; 
+				justify-content: center; 
+				z-index: 100;
+			}
+			.nomes {
+				background-color: 
+				rgba(0,0,0,0.3); 
+				border-radius: 10px; 
+				display: flex; 
+				align-items: flex-end; 
+				justify-content: center;
+				position: static; 
+				width: auto; 
+				padding: 15px; 
+				z-index: 100; 
+			}
+			.menu-dropright submenu {
+				width: 100%; 
+			}
+			nav a {
+				width: 100%;
+				display: flex; 
+				flex-direction: column; 
+				text-decoration: none; 
+				color:black;padding: 5px 5px; 
+			}
+			.link-item {
+				background-color: rgba(0,36,71,0.7);;
+				width: 100%;
+				color: #C1CDD9; 
+				font-weight: bold; 
+				font-size: 20px; 
+				padding: 12px 12px; 
+				z-index: 900;
+			}
+			.link-item:hover {
+				background-color: #C1CDD9; 
+				color: #002447; 
+				z-index: 900;
+			}
+			.banner {
+				width: 100%; 
+				height: 120px; 
+			}
+			header h1 {
+				color: rgba(255,255,255,0.4); 
+				display: none; 
+			}
+			.sidebar a {
+				width: 100%; 
+				display: flex; 
+				justify-content: center; 
+				align-items: center; 
+				z-index: 900;
+			}
+			.logo {
+				width: 160px; 
+				height: auto; 
+				z-index: 100;
+			}
+			.foto {
+				width: 120px; 
+				height: auto; 
+				margin-top: 20px; 
+				z-index: 100;
+			}
+			.code {
+				display: none; 
+				width: 80px; 
+				margin-top: 10px; 
+				flex-grow: 0; 
+			}
+			.identidade {
+				background-color: #002447; 
+				display: flex; 
+				flex-direction: column; 
+				align-items: center; 
+			}
+			.identidade h1 {
+				display: block; 
+				color: #FFF; 
+			}
+			.ancoras {
+				position: relative;
+				top: -50px;
+				opacity: 0;
+			}
+			.escondido {
+				display: block;
+			}
+			#menu1 {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				height: 50px;
+				background-color: #00F;
+				justify-content: center;
+				z-index: 10;
+				z-index: 900;
+			}
+			#menu-ico{
+				/*
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				*/
+				margin-right: 16px;
+				width: auto !important;
+				z-index: 1000;
+				font-size: 22px;
+				color: white;
+			}
+			.menu-box{
+				display: flex;
+				flex-direction: column;
+				transform: translateY(-300px);
+				transition: transform 500ms;
+				width: 100%;
+			}
+			.menu-box-aberto{
+				transform: translateY(50px);
+			}
+			.opcoes {
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				height: 50px;
+				background-color: #002447;
+				z-index: 100;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+			}
+			.submenu {
+				display: none;
+			}
+			.inicio {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				/* height: calc (100vh - 300px); */
+			}
+			.agradecimento {
+				position: absolute;	
+				display: flex;
+				flex-direction: column-reverse;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				height: 350px;
+				overflow-x: hidden;
+				background-color: white;
+				z-index: 500;
+				opacity: 1;
+				transition: opacity 3000ms;
+			}
+			.agradecimento h1{
+				text-align: center;
+			}
+			.agradece {
+				height: 350px;
+				width: 100%;
+				z-index: 400;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			.agradece a {
+				text-decoration: none;
+				color: #000;
+				text-align: center;
+			}
+			.agradece h1 {
+				font-size: 17px;
+				letter-spacing: 1px;
+				font-weight: 800;
+				color: black;
+			}
+			.software {
+				width: auto;
+				height: 250px;
+			}
+			.gratidao {
+				display: block;
+				width: 200px;
+			}	
+			.italico {
+				font-style: italic;
+			}
+			.link-item {
+				line-height: 20px;
+				z-index: 900;
+			}
+	
+			.frame-video{
+				width: 90%;
+				height: calc(100vw / 1.7777);
+			}
+			p {
+				display: flex;
+				justify-content: center;
+			}
+			.mapa-mental {
+				width: 75%;
+			}
+			.negrito {
+				font-weight: bold;
+			}
+			
+			@media (min-width: 960px) {
+							
+					body{
+						display: flex;
+						flex-direction: column;
+						height: 100vh;
+						overflow: hidden;
+					}
+					header {
+						top: 0px;
+						left: 0px;
+						display: flex;
+						flex-shrink: 0;
+						flex-grow: 0;
+						width: 100%;
+						height: 150px;
+						justify-content: center;
+						align-items: center;
+						margin-top: inherit;
+					}
+					header h1 {
+						color: rgba(255,255,255,0.4);
+						display: flex;
+						justify-content: center;
+						margin-bottom: 7px;
+					}
+					.identidade h1 {
+						display: none;
+						color: #FFF;
+					}
+					.top {
+						top: 20px;
+					}
+					.nomes {
+						background-color: rgba(0,0,0,0.2);
+						border-radius: 10px;
+						z-index: 100;
+						display: flex;
+						align-items: flex-end;
+						justify-content: space-between;
+						position: static;
+						width: 90%;
+						padding: 15px;
+					}
+					.nomes h1 {
+						margin-right: 20px;
+					}
+					.banner {
+						display: block;
+						width: 100%;
+						height: 150px;
+						position: absolute;
+					}
+					.principal {
+						display: flex;
+						flex-direction: row;
+						flex-grow: 1;
+					}
+					.sidebar {
+						background-color: #002447; /* background-color: #192845 #7f8078; #656561 */
+						width: 190px;
+						text-align: center;
+						position: relative;
+						z-index: 1000;
+						flex-shrink: 0;
+					}
+					.sidebar h1 {
+						width: 300px;
+						color: gray;
+						text-align: center;
+					}
+					#menu1{
+						position: static;
+						width: 100%;
+						background-color: inherit;
+						height: inherit;
+						z-index: 1000;
+					}
+					.opcoes {
+						display: none;
+					}
+					.menu-ico {
+						display: none !important;
+					}
+					.menu-box {
+						display: inherit;
+						flex-direction: column;
+						transform: translateY(0px);
+						transition: none;
+						position: static;
+						z-index: 1000;
+					}
+					.menu-dropright {
+						width: 100%;
+						z-index: 1000;
+					}
+					.link-item {
+						color: #7798BA;<!--#C1CDD9-->
+						font-weight: bold;
+						font-size: 18px;
+						padding: 3px 3px;
+					}
+					.link-item:hover {
+						background-color: #8da3b9;
+						color: #002447;
+					}
+					.logo {
+						width: 200px;
+						<!-- margin-left: 20px; -->
+						flex-grow: 0;
+					}
+					.foto {
+						 width: 130px;
+						 flex-grow: 0;
+						 margin: 16px 10px;
+					}
+					.code {
+						display: block;
+						width: 100px;
+						margin-top: 30px;
+						align-items: center;
+						flex-grow: 0;
+					}
+					h1 {
+						margin: 5;
+						text-align:center;
+						color: black;
+					}
+					main {
+						flex-grow: 1;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						position: relative;
+						z-index: 500;
+					}
+					.corpo {
+						display: flex;
+						flex-direction: column;
+						flex-grow: 1;
+					}
+					.agradecimento {
+						position: absolute;	
+						display: flex;
+						flex-direction: column-reverse;
+						justify-content: center;
+						align-items: center;
+						height: 400px;
+						width: 100%;
+						background-color: white;
+						z-index: 500;
+						opacity: 1;
+						transition: opacity 3000ms;
+					}
+					.agradece {
+						z-index: 400;
+						display: block;
+					}
+					.agradece h1 {
+						font-size: 24px;
+						letter-spacing: 6px;
+						font-weight: 800;
+						color: black;
+						text-decoration: none;
+					}
+					.software {
+						width: 380px;
+						height: auto;
+					}
+					.gratidao {
+						display: block;
+					}	
+					.escondido {
+						display: none;
+					}
+					.submenu {
+						display: none;
+						z-index: 1000;
+					}
+					.submenu-aberto {
+						transform: translateY(-162px);
+						display: block;
+						width: 190px;
+						background-color: rgb(119,152,186,0.5);
+						position: absolute;
+						top: 0px;
+						right: -190px;
+						height: calc(100vh - 132px - 150px);
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						z-index: 1000;
+					}
+					.submenu-aberto a {
+						color: #002447;
+						margin: 0px 10px;
+						padding: 15px 0px;
+					}
+					.submenu-aberto a:hover {
+						color: #fafaff;
+					}
+					.link-item {
+						line-height: 30px;
+						background-color: #0000;
+					}
+					footer {
+						background-color: #C1CDD9; /* background-color: #192845 #7f8078; #656561 */
+						width: 100%;
+						display: flex;
+						padding: 8px;
+						justify-content: space-between;
+					}
+					footer a {
+						color:black;
+						text-decoration: none;
+					}
+					.redesocial{
+						display: flex;
+						font-size: 30px;
+						align-items: center;
+						margin: 0px 24px;
+					}
+					.redesocial-item{
+						margin: 0px 12px;
+					}
+					.footer-contatos{
+						display: flex;
+						flex-direction: column;
+						margin: 0px 24px;
+						justify-content: center;
+					}
+					.footer-contatos-box{
+						display: flex;
+					}
+					.footer-contatos-first{
+						margin-bottom: 4px;
+					}
+					.whats{
+						font-size: 18px;
+						margin-right: 4px;
+					}
+					.article {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;						
+					}
+					.frame-video{
+						width: 600px;
+						height: 337.5px;
+					}
+					.mapa-mental {
+						width: 750px;
+					}
+			}
+		</style>
+	</head>
+
+	<body>
+		<a class="topo" name="banner" id="banner"></a>
+<!--		
+	  <body onload="digaOla()">
+-->	
+
+	<header>
+		
+
+		</nav>
+		<img class="banner" src="img/sunrise_parcial.jpg" alt="amanhecer na praia">
+		<div class="top">
+			<div class="nomes">
+				<a href="http://www.waltherkerth.com.br" target="_self"><img class="logo" src="img/walther_logo.png" alt="logo de walther kerth"></a>
+				<h1>Walther Hermann Kerth Jr.</h1>
+				<!-- <h3>Persona Profissional</h3> -->
+			</div>
+		</div>
+	</header>
+	
+	<section class="principal">
+		<section class="sidebar">
+			<div class="identidade">
+				<a href="http://www.waltherkerth.com.br" target="_self"><img class="foto" src="img/foto.png" alt="foto de walther kerth"></a>
+				<!-- <h3>Persona Profissional</h3> -->
+				<h1>Walther Hermann Kerth Jr.</h1>
+			</div>
+
+			<nav id="menu1" class="link1 menu">
+				<div class="opcoes"><a class="menu-ico" id="menu-ico" href="#" onclick=" return alternarMenu();"><i class="fas fa-bars"></i></a></div>
+				<div class="menu-box" id="menu-box">
+					<div class="menu-dropright" data-submenu="home">
+						<a id="link1" class="link-item" href="#banner" data-art="inicio" onclick="fecharMenu();">home</a> <!-- ícone da casinha -->
+						<div class="home submenu">
+							<a id="link2" class="link-item" href="#">agradecimento</a> <!-- data-ancora="agradecimento" ícone da gratidão -->
+						</div>	
+					</div>
+					<div class="menu-dropright" data-submenu="identidade">
+						<a id="link3" class="link-item menu" href="#quem" data-art="art1" onclick="fecharMenu();">quem</a> <!-- data-ancora="quem" ícone de silhueta -->
+						<div id="identidade" class="quem submenu">
+							<a id="link4" class="link-item" href="#quemsou" data-art="art1">quem sou</a> <!-- data-ancora="quemsou" --> 
+							<a id="link5" class="link-item" href="#historia" data-art="art2">história</a> <!-- data-ancora="historia" --> 
+							<a id="link6" class="link-item" href="#quemconhece" data-art="art3">quem conhece</a> <!-- data-ancora="quemconhece" Testemunhais [slider com vários vídeos e depoimentos escritos -->
+							<a id="link7" class="link-item" href="#quemquer" data-art="art4">quem deseja</a> <!-- data-ancora="quemquer" Público --> 
+							<a id="link46" class="link-item" href="#tribo" data-art="art5">quem mais</a> <!-- data-ancora="tribo" Associações e filiações --> 
+						</div>
+					</div>
+
+					<div class="menu-dropright" data-submenu="oque2">
+						<a id="link8" class="link-item menu" href="#oque" data-art="art6" onclick="fecharMenu();">o quê</a> <!-- data-ancora="oque" ícone de lente de aumento -->
+						<div id="oque2" class="oque submenu">
+							<a id="link81" class="link-item" href="#website" data-art="art51">este site</a>  <!-- data-ancora="website" -->
+							<a id="link9" class="link-item" href="#visao" data-art="art6">visão</a>  <!-- data-ancora="visao" -->
+							<a id="link10" class="link-item" href="#portfolio" data-art="art7">portfolio</a> <!-- data-ancora="producao" Livros, cursos, palestras, terapia breve, consultoria, aconselhamento, etc. --> <!-- -->
+							<a id="link11" class="link-item" href="#arquitetura" data-art="art8">arquitetura<!--  data-ancora="arquitetura" do aprendizado <em>Learning Design</em>)--></a> <!-- -->
+							<a id="link12" class="link-item" href="#pesquisa" data-art="art9">pesquisa</a> <!-- data-ancora="pesquisa" Informações sobre mestrado em neurociências --> <!-- -->
+						</div>
+					</div>	
+					
+					<div class="menu-dropright" data-submenu="motivacao">
+						<a id="link13" class="link-item menu" href="#motivacoes" data-art="art10" onclick="fecharMenu();">motivações</a> <!-- ícone de ímã --> <!-- data-ancora="motivacoes" -->
+						<div id="motivacao" class="motivacoes submenu">
+							<a id="link14" class="link-item" href="#importante" data-art="art11">o que importa</a>  <!-- data-ancora="importante" -->
+							<a id="link16" class="link-item" href="#porque" data-art="art12">por quê</a> <!-- data-ancora="porque" -->
+							<a id="link17" class="link-item" href="#paraque" data-art="art13">para quê</a> <!-- data-ancora="paraque" -->
+							<a id="link15" class="link-item" href="#proposito" data-art="art130">proposito</a>  <!-- data-ancora="proposito" -->
+							<a id="link151" class="link-item" href="#beneficios" data-art="art131">benefícios</a>  <!-- data-ancora="beneficios" -->
+						</div>
+					</div>
+					
+					<div class="menu-dropright" data-submenu="processo">
+						<!-- <a id="link25" class="link-item menu" href="#como">como</a> ícone de engrenagem ou fluxograma -->
+						<a id="link25" class="link-item menu" href="#como" data-art="art20" onclick="fecharMenu();">como</a>
+						<div id="processo" class="como submenu">
+							<a id="link251" class="link-item" href="#website" data-art="art191">este site</a>  <!-- data-ancora="website" -->
+							<a id="link26" class="link-item" href="#missao" data-art="art20">missão</a>  <!-- data-ancora="missao" -->
+							<a id="link27" class="link-item" href="#estrategias" data-art="art21">estratégias</a>  <!-- data-ancora="estrategias" -->
+							<a id="link28" class="link-item" href="#recursos" data-art="art22">recursos</a> <!-- data-ancora="recursos" -->
+							<a id="link29" class="link-item" href="#eixo" data-art="art23">eixo</a> <!-- espinha dorsal --> <!-- data-ancora="espinha" -->
+							<a id="link30" class="link-item" href="#metodos" data-art="art24">métodos</a> <!-- data-ancora="metodos" -->
+						</div>
+					</div>
+					
+					<div class="menu-dropright" data-submenu="navegacoes">
+						<a id="link18" class="link-item menu" href="#navegacao" data-art="art14" onclick="fecharMenu();">navegação</a> <!-- ícone de bússola --> <!-- data-ancora="navegacao" -->
+						<div id="navegacoes" class="oque submenu">
+							<a id="link19" class="link-item" href="#tags" data-art="art14"><span class="italico">tags</span></a>  <!-- data-ancora="tags" -->
+							<a id="link20" class="link-item" href="#mapa" data-art="art15">mapa</a>  <!-- data-ancora="mapa" -->
+							<a id="link21" class="link-item" href="#onde" data-art="art16">onde</a> <!-- data-ancora="onde" -->
+							<a id="link22" class="link-item" href="#quando" data-art="art17">quando</a> <!-- data-ancora="quando" -->
+							<a id="link23" class="link-item" href="#eventos" data-art="art18">eventos</a> <!-- data-ancora="agenda" -->
+							<a id="link24" class="link-item" href="#localizar" data-art="art19">localizar</a> <!-- data-ancora="localizar" -->
+						</div>
+					</div>						
+					
+					<div class="menu-dropright" data-submenu="compras">
+						<a id="link31" class="link-item menu" href="#compra" data-art="art25" onclick="fecharMenu();">loja</a> <!-- ícone de carrinho --> <!-- data-ancora="loja" -->
+						<div id="compras" class="loja submenu">
+							<a id="link33" class="link-item" href="#livros" data-art="art26">livros</a>  <!-- data-ancora="livros" -->
+							<a id="link34" class="link-item" href="#inspiracao" data-art="art27">inspirando-se</a>  <!-- data-ancora="inspirando" -->
+							<a id="link36" class="link-item" href="#presenciais" data-art="art28">presenciais</a> <!-- data-ancora="presenciais" -->
+							<a id="link37" class="link-item" href="#ead" data-art="art29">ead</a> <!-- data-ancora="ead" -->
+						</div>
+					</div>	
+					
+					<div class="menu-dropright" data-submenu="comunid">
+						<a id="link39" class="link-item menu" href="#comunidade" data-art="art30" onclick="fecharMenu();">comunidade</a> <!-- ícone de pessoas juntas --> <!-- data-ancora="comunidade" -->
+						<div id="comunid" class="comunidade submenu">
+							<a id="link40" class="link-item" href="#contato" data-art="art31">contato</a>  <!-- data-ancora="contato" -->
+							<a id="link41" class="link-item" href="#cadastramento" data-art="art32">newsletter</a>  <!-- data-ancora="cadastramento" -->
+							<a id="link42" class="link-item" href="#sites" data-art="art33"><span class="italico">sites</span></a> <!-- data-ancora="sites" --> <!-- de conteúdo -->
+							<a id="link43" class="link-item" href="#blog" data-art="art34"><span class="italico">blog</span></a> <!-- data-ancora="blog" -->
+							<!-- <a id="link44" class="link-item" href="#forum" data-art="art34">fórum</a> data-ancora="forum" -->
+							<a id="link45" class="link-item" href="#redes" data-art="art35">redes sociais</a> <!-- data-ancora="redes" --> 
+						</div>
+				</div>
+			</nav>
+			
+			<a href="index.html" target="_self"><img class="logo code" src="img/qrcode.png" alt="qrcode"></a>
+		</section> <!-- pertencente à seção sidebar ->>
+		
+<!-- ======================================================================================================== -->
+
+		<div id="corpo" name="corpo" class="corpo">
+			<main>  <!-- Conteúdos do site -->
+
+				<!-- Caixa de texto com ícone que aparece apenas 3.000ms quando o site finaliza carregamento -->
+<!--			<div data-art-box class="inicio" id="inicio">	
+					<div class="agradecimento" id="agradecimento">
+						<h1>Obrigado por visitar este <span class="italico">website</span><br>de minha persona profissional</h1>
+						<img class="gratidao" src="img/gratidao.png" alt="imagem de boas vindas">
+					</div>
+					<div class="agradece" id="agradece">
+						<a class="link-out" href="http://www.softwareshumanos.com.br" target="_blank"><img class="software" src="img/cabeca.png" alt="cabeça"></a>
+						<h1><a href="http://www.softwareshumanos.com.br" target="_blank"><span class="italico">SOFTWARES</span> HUMANOS</a></h1>
+					</div>
+					<div id="home"></div>
+				</div>
+ -->				
+ 			<div data-art-box class="inicio" id="inicio">	
+					<div class="agradecimento" id="agradecimento">
+						<h1><a href="http://www.softwareshumanos.com.br" target="_blank"><span class="italico">SOFTWARES</span> HUMANOS</a></h1>
+						<a class="link-out" href="http://www.softwareshumanos.com.br" target="_blank"><img class="gratidao" src="img/cabeca.png" alt="cabeça"></a>
+						<h1>Obrigado por visitar este <span class="italico">website</span><br>de minha persona profissional</h1>
+					</div>
+					<div class="agradece" id="agradece">
+						<img class="mapa-mental" src="img/mapa.png" alt="mapa mental"></a>
+					</div>
+					<div id="home"></div>
+				</div>
+				
+	<!-- ======================================================================================================== -->
+
+				<!-- Conteúdos da seção QUEM -->
+					
+				<article data-art-box id="art1" class="art1 escondido">	
+					<a id="quem" class="ancoras">.</a>
+					<a id="quemsou"></a>
+					<div class=" quemsou" style="border: 2px solid brown">
+						<!-- em vídeo o material dos vendedores ignorância e de fracassos -->
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/rett8h3QsR4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+													<!-- largura original dos vídeos: width="600" height="337,5" --> 				
+						<p>	Meu nome é Walther Hermann Kerth Jr.<br>
+							Sou um especialista em recursos e processos de aprendizagem de adultos e jovens.<br>
+							Costumo chamar isto de <span class="italico">Learning Design</span> ou Arquitetura de Processos de Aprendizagem.<br>
+							Entre distintas iniciativas, o ponto de convergência, a essência daquilo que faço pode ser melhor entendida como 
+							a arte de criar roteiros e trilhas educacionais de grande efetividade para facilitar o aprimoramento ou substituição 
+							de hábitos e comportamentos de adultos, destinadas ao desenvolvimento e consolidação de competências mentais, emocionais 
+							e comportamentais e enriquecimento de inteligências (hábitos, condutas, atitudes, estados emocionais e estratégias de 
+							comportamento).
+						</p>
+					</div>	
+				</article>	
+				
+				<article data-art-box id="art2" class="art2 escondido">	
+					<a id="historia" class="ancoras">.</a>
+					<div class="historia" style="border: 2px solid green">
+						<!-- em vídeo comentários sobre a importância do esporte (atividade física e aprendizado motor) 
+							em minha carreira profissional: os dois pés enterrados! -->
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/nZ7ijCjE-kI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<p>	Grande parte das competências de aprendizagem que conquistei foram adquiridas por motivações e/ou necessidades pessoais, 
+							na busca de soluções para meus desafios ou para alcançar meus objetivos.<br>
+							Comecei meus estudos superiores com engenharia e, ainda na juventude, me tornei instrutor de Tênis e, posteriormente, 
+							de Tai Chi Chuan. Este conjunto de experiências escolares e profissionais iniciais de vida, me vinculou profundamente com 
+							"números" e resultados mensuráveis; estes parâmetros norteiam toda a minha vida profissional: resultados palpáveis.							
+							Posteriormente, como empreendedor, líder, hipnoterapeuta, treinador, palestrante, escritor, consultor, <span class="italico">coach</span> 
+							e constelador, tais motivações permaneceram presentes.<br>
+							Buscando uma forma de manifestar minhas competências no mundo e comercializá-las, desenvolvi minhas habilidades 
+							comerciais e de <span class="italico">networking</span>. Atualmente me considero um servidor dedicado a tornar 
+							a vida dos meus clientes (pessoal, profissional e/ou corporativa) mais fácil, agradável e produtiva. 
+							
+						</p>
+					</div>	
+				</article>	
+				
+				<article data-art-box id="art3" class="art3 escondido">	
+					<a id="quemconhece" class="ancoras">.</a>
+					<div class="quemconhece" style="border: 2px solid red">
+						<p>	Aqui estão alguns testemunhos de profissionais, executivos e líderes que já experimentaram os <span class="italico">SOFTWARES</span> 
+						CEREBRAIS (recursos) que ofereço na área de treinamento, desenvolvimento e <span class="italico">coaching</span></p>
+						<!-- slider com testemunhais -->
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/r1g6HbOgFpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+					</div>	
+				</article>	
+				
+				<article data-art-box id="art4" class="art4 escondido">	
+					<a id="quemquer" class="ancoras">.</a>
+					<div class="quemquer" style="border: 2px solid orange">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/r1g6HbOgFpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<p>	O público dos programas de desenvolvimento pessoal e profissional que ofereço é constituído predominantemente de 
+							empreendedores, líderes, executivos e profissionais em busca de melhorar a <span class="italico">performance</span> 
+							através de recursos de aprendizagem, treinamento, mentoria, <span class="italico">coaching</span> e desenvolvimento 
+							de habilidades.
+						</p>
+					</div>	
+				</article>	
+				
+				<article data-art-box id="art5" class="art5 escondido">	
+					<a id="tribo" class="ancoras">.</a>
+					<div class="tribo" style="border: 2px solid orange">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/r1g6HbOgFpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<p>	Pertenço a uma comunidade crescente de pessoas que acredita que pode contribuir para a construção de um mundo melhor e 
+							se dedica obstinadamente a isso: uma mundo mais humano, mais fraterno, mais educado e mais justo, do qual nossos descendentes 
+							possam se orgulhar de fazer parte.<br>
+							Paradoxalmente, minha geração e suas vizinhas mais velhas e mais jovens, pouco conscientes de suas responsabilidades 
+							sociais e espirituais, ainda hesitam em mudar hábitos e parecem contribuir cegamente para manter o legado de violência 
+							e consumo desenfreado herdado da cultura de sobrevivência disseminada durante o século XX, durante os períodos de 
+							conflitos e escassez.
+						</p>
+						<p> BNI, EMPRETEC, S.E., Focalização, PNL, Hipnose, Constelações Sistêmicas, Coaching, PEI, NEC USP, (fazer imagem do trevo 
+						com as ferramentas TOP Down e BOTTOM Up)...						
+						</p>
+					</div>	
+				</article>	
+				
+	<!-- ======================================================================================================== -->
+
+			<!-- Conteúdos da seção O QUE -->
+
+				<article data-art-box id="art6" class="art6 escondido">	
+					<a id="oque" name="oque" class="ancoras">.</a>
+					<div class=" estesite" style="border: 2px solid blue">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/yuqx2QO9NVg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<p>	Este <span class="italico">website</span> tem o formato de loja virtual para disponibilizar, em um único ambiente 
+							virtual, o conjunto de diferentes iniciativas que, provavelmente, pareceriam confusas numa única empresa 
+							dada a sua diversidade, apesar de todas derivarem de meus empreendimentos. Entre eles estão fragmentos da 
+							minha história, convicções, objetivos, planos, livros, cursos presenciais e à distância.<br>
+							Ele portanto apresenta minha persona profissional e um <span class="italico">portfolio</span> do que produzi 
+							e produzo desde 1985, quando ingressei apaixonado no caminho do desenvolvimento humano.
+						</p>
+					</div>	
+				</article>	
+				
+				<article data-art-box id="art7" class="art7 escondido">	
+					<a id="visao" class="ancoras">.</a>
+					<div class="visao" style="border: 2px solid pink">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/yuqx2QO9NVg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<p>	Minha visão se manifesta em camadas, como num holograma, naquilo que busco para mim e no que busco como 
+							resultado de minha atuação no mundo.<br>
+							Pessoalmente me dedico ao autoconhecimento como uma forma de libertação de meus preconceitos e paradigmas 
+							improdutivos; para isso busco alcançar um estado interior afirmativo em relação às experiências de vida, 
+							de independência das modas e das iniciativas barulhentas de poucas soluções e de serenidade diante das 
+							adversidades, portanto tal visão pode ser representada facilmente por símbolos de liberdade.<br>
+							No âmbito pessoal, invisto meu tempo em concretizar meus sonhos orientados para a construção de modelos e 
+							métodos de aprendizagem que tornem a minha vida mais fácil, mais produtiva e mais satisfatória. Isso se 
+							propaga por minhas iniciativas e programas de treinamentos disponibilizados profissionalmente.<br>
+							Profissionalmente, minha visão é de contribuir para a construção de um Brasil mais culto, educado e fraterno, 
+							que possa nos libertar do sofrimento e da pobreza nacionais e, por mais utópica que possa parecer, esta visão 
+							representa meu sonho de testemunhar o florescimento do senso de fraternidade, coesão, cooperação e credibilidade 
+							que possa elevar do povo brasileiro a um patamar de país educado orientado para ser uma nação de primeiro mundo.
+						</p>
+					</div>	
+				</article>	
+				
+				<article data-art-box id="art8" class="art8 escondido">	
+					<a id="producao" class="ancoras">.</a>
+					<div class="producao" style="border: 2px solid darkblue">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/yuqx2QO9NVg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<p>	Minha atividade profissional é diversificada, embora convergente: construo trilhas educacionais para treinamentos 
+							comportamentais para adultos, líderes e executivos, desenvolverem competências e inteligências.<br>
+							Certa vez, perguntaram ao Jô Soares como ele era capaz de fazer tantas coisas diferentes: cinema, teatro, <span class="italico">talk shows</span> 
+							livros, <span class="italico">coaching</span>, dramaturgia, etc. Sua resposta foi única: "Eu somente faço humor!". Parafraseando-o, 
+							minha resposta é semelhante: a essência do meu trabalho é o estudo e a criação de processos de aprendizagem mais elegantes e efetivos.<br>
+							Para me posicionar neste mercado de serviços, envolvo-me com várias outras atividades afins que deem suporte a  
+							tal atuação, tais como: ministrar treinamentos, proferir palestras, participar de congressos e conferências, escrever 
+							e publicar livros meus e de meus mestres, atender pessoas em sessões privadas ou em grupo com recursos de 
+							terapia breve, <span class="italico">coaching</span>, mentoria e aconselhamento.
+						</p>
+					</div>	
+				</article>	
+				
+				<article data-art-box id="art9" class="art9 escondido">	
+					<a id="arquitetura" class="ancoras">.</a>
+					<div class="arquitetura" style="border: 2px solid yellow">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/yuqx2QO9NVg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<p>	Aquilo que chamo de arquitetura de processos de aprendizagem (que dá origem aos chamados <span class="italico negrito">SOFTWARES</span> 
+							HUMANOS) é uma bagagem de conhecimento e uma sensibilidade treinada para identificar e sequenciar experiências, atividades 
+							didáticas, dinâmicas, bate-bolas, discussões, conceituações, exercícios, reflexões, etc., com o objetivo de construir mais 
+							rápida e confortavelmente novos hábitos e habilidades com o melhor resultado associado ao menor esforço.<br>
+							Tal sensibilidade, para mim, começou com os desafios de aprendizagem de atividades esportivas complexas, como a prática 
+							do tênis. Posteriormente do Tai Chi Chuan, Aikidô, <span class="italico">webdesign</span>, entre vários outros desafios. 
+							A ordenação das experiências e memórias destas competências me ensinaram que existem formas melhores ou piores de aprender.<br>
+							É sob esta perspectiva que descobri como construir roteiros que tornam atividades complexas relativamente simples para os 
+							meus clientes. Isto torna-se possível quando consigo distinguir o que é importante do que não é, quais são as técnicas 
+							essenciais e quais são apenas estilos, como hierarquizar as sub-habilidades e como sequenciá-las, criando processos orgânicos, 
+							fluidos, elegantes, simples e graduais de exercícios práticos e conceituais, até a conquista da competência desejada.
+						</p>
+					</div>	
+				</article>	
+				
+				<article data-art-box id="art10" class="art10 escondido">	
+					<a id="pesquisa" class="ancoras">.</a>
+					<div class="pesquisa" style="border: 2px solid gray">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/yuqx2QO9NVg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<p>	Depois de uma "semente" plantada por uma cliente neurocientista, em 2015 comecei a estudar Neurociência academicamente, 
+							cursando disciplinas de pós-graduação que me preparassem para meu novo desafio: um mestrado em Neurociência Cognitiva 
+							planejado para iniciar em 2020.<br>
+							A satisfação foi tamanha que hoje dedico boa parte do meu tempo a estudar e aprender, enriquecendo meus treinamentos com 
+							maior rigor e profundidade, em busca de estudos científicos que possibilitem uma fundamentação teórica mais apropriada 
+							para o que observo na prática como um explorador de processos de aprendizagem e da natureza da mente humana.<br>
+							Surpreendentemente, depois de tantos anos de estudos e pesquisas, creio que os profissionais que mais entendem de 
+							processos de aprendizagem no presente são os arquitetos de <span class="italico">games</span>, jogos e realidade 
+							virtual: eles realmente sabem como as pessoas aprendem e mantém o foco de atenção. Este será, provavelmente, um 
+							futuro campo de pesquisa.
+						</p>
+					</div>	
+				</article>	
+				
+					
+	<!-- ======================================================================================================== -->
+
+				<!-- Conteúdos da seção MOTIVAÇÕES -->
+				
+				<a id="motivacoes" name="motivacoes" class="ancoras">.</a>
+				<article data-art-box id="art11" class="art11 escondido">	
+					<a id="importante" class="ancoras"></a>
+					<div class="porque" style="border: 2px solid brown">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/9amGwmLoub4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<!-- O que importa? -->
+						<p>	O que eu considero realmente importante em minha produção profissional é diferente do que considero importante em minha 
+							conduta profissional, pois creio que a realidade seja um holograma com várias camadas de significados.<br>
+							Para a minha produção profissional importa amor, entusiasmo, criatividade, inteligência, simplicidade, elegância e 
+							alta qualidade.<br>
+							Na minha conduta profissional, meus valores mais importantes são: responsabilidade, compromisso, respeito, qualidade e 
+							profissionalismo.
+						</p>
+						</div>
+				</article>	
+				
+				<article data-art-box id="art12" class="art12 escondido">	
+					<a id="porque" class="ancoras"></a>
+					<div class="porque" style="border: 2px solid brown">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/9amGwmLoub4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<!-- Por quê? -->
+						<p>	Os desafios que enfrentei em minha vida pessoal e profissional me convidaram a buscar conhecimento prático e teórico 
+							para compreender o meu papel e para adquirir recursos de contenção e superação de adversidades.<br>
+							Os aprendizados pessoais e profissionais tornaram-se úteis para muitas outras pessoas ao longo deste caminho de 
+							uma vida. Obtenho meu sustento a partir das atividades de professor, treinador, consultor e <span class="italico">coach</span> 
+							em desenvolvimento pessoal e profissional.<br>
+							Continuo apaixonado pelo que faço e amante do meu trabalho por eles me proporcionarem um tipo de alimento para minha alma 
+							e compartilho isso com a intenção de trazer liberdade e bem estar para meus clientes e amigos.
+						</p>
+					</div>
+				</article>	
+				
+				<article data-art-box id="art13" class="art13 escondido">	
+					<a id="paraque" class="ancoras">.</a>
+					<div class="paraque" style="border: 2px solid green">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/O6EQbf--Mp8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<!-- Para quê? -->
+						<p>	Este site existe para reunir e disponibilizar as diversas iniciativas da minha produção profissional e pessoal, orientadas 
+							para otimização de processos de aprendizagem de competências pessoais e profissionais.<br>
+							Aqui será possível encontrar iniciativas e empreendimentos que, anteriormente disponíveis no portal <a href="http://www.idph.com.br" target="_blank">www.idph.com.br</a><br>
+							geravam congestão de informações, confusão mental e dificuldades de localização.<br>
+							Minha produção profissional existe para tornar a vida mais fácil e mais agradável na dimensão do desenvolvimento pessoal e 
+							profissional. Costumo dizer que muito do que produzo é dedicado aos preguiçosos, pois simplicações não são necessárias ou 
+							desejadas por pessoas disciplinadas! Então, grande parte da minha profissão existe para quer simplicidade e efetividade 
+							com menor esforço.
+						</p>
+					</div>
+				</article>	
+				
+				<article data-art-box id="art130" class="art130 escondido">	
+					<a id="beneficios" class="ancoras">.</a>
+					<div class="proposito" style="border: 2px solid red">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/O5CO1M-qTJg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<!-- Propósito? -->
+						<p>	Meu principal propósito de vida é expressar meus talentos e minhas qualidades no mundo e torná-los úteis e acesíveis para as 
+							pessoas com quem convivo pessoal e profissionalmente.<br>
+							Os propósitos dos empreendimentos dos quais faço parte sempre estão alinhados com meus propósitos pessoais e tem relação com 
+							cumprir meu papel de servidor, cuja atuação seja uma retribuição por todas as oportunidades e bênçãos que recebo como um ser 
+							humano amante da Existência.<br>
+							Conforme dizia uma amiga na dedicatória de um livro, creio que o mais genuíno dos sentimentos religiosos talvez não seja o 
+							Amor, conforme muitos autores propõem, mas sim, a perplexidade diante da indescritível Obra da Criação, se é que assim 
+							podemos chamar o <span class="negrito">Milagre da Existência</span> - sempre mantenho em minhas reflexões esta perspectiva.
+						</p>
+					</div>
+				</article>	
+				
+				<article data-art-box id="art131" class="art131 escondido">	
+					<a id="beneficios" class="ancoras">.</a>
+					<div class="beneficios" style="border: 2px solid red">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/O5CO1M-qTJg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<!-- Benefícios? -->
+						<p>	Os principais benefícios do que faço eu poderia denominar de despertar da consciência e expansão da percepção. Entretanto estes 
+							efeitos não parecem ter muito valor em nossa cultura de consumo.<br>
+							Um dos mais significativos efeitos dos recursos que disponibilizo é um alinhamento interior que pode proporcionar paz, serenidade, 
+							centramento, bem estar e boa saúde mental, emocional e física.<br>
+							Então precisei mapear os efeitos práticos do meu trabalho no contexto pessoal e profissional para identificar um valor social no 
+							meu trabalho.<br>
+							Graças a este esforço cheguei ao universo do desenvolvimento de competências mentais, emocionais e comportamentais e ao 
+							enriquecimento de inteligências.
+						</p>
+					</div>
+				</article>	
+				
+			
+	<!-- ======================================================================================================== -->
+
+				<!-- Conteúdos da seção COMO -->
+				
+				<article data-art-box id="art18" class="art18 escondido">	
+					<a id="como" name="como" class="ancoras">.</a>
+					<div class="como" style="border: 2px solid yellow">
+					<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/qSR8usO27i8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<!-- Como? -->
+						<p>	Eu comercializo e compartilho meu conhecimento, se for possível referir-se a ele desta forma, através de vários recursos educacionais:</p>
+							<ul>
+								<li>Treinamentos e palestras;</li>
+								<li><span class="italico">Coaching</span> individual e em equipes;</li>
+								<li>Aconselhamento e consultoria;</li>
+								<li>Terapia brevíssima (abordagens <span class="italico">TOP DOWN</span> e <span class="italico">BOTTON UP</span>).</li>
+							</ul>
+					</div>
+				</article>	
+				
+				<article data-art-box id="art19" class="art19 escondido">	
+					<a id="recursos" class="ancoras">.</a>
+					<div class="recursos" style="border: 2px solid gray">
+					<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/KY1bAhKjO7s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<!-- Recursos? -->
+						<p>	Os principais recursos para isso são:</p>
+							<ul>
+								<li><span class="italico">Sites</span>, <span class="italico">Blogs</span>, Fóruns, <span class="italico">Webinars</span> e Redes Sociais;</li>
+								<li>Vídeos, áudios e textos;</li>
+								<li>Livros e comunidade na <span class="italico">internet</span>;</li>
+								<li>Treinamentos e cursos presenciais em várias cidades do Brasil e à distância.</li>
+					</div>
+				</article>	
+				
+
+	<!-- ======================================================================================================== -->
+
+				<!-- Conteúdos da seção NAVEGAÇÃO -->
+
+				<article data-art-box id="art14" class="art14 escondido">	
+					<a id="navegacao" name="navegacao" class="ancoras">.</a>
+					<div class="quanto" style="border: 2px solid orange">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/MdlpvblaqEQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<!-- Quanto? -->
+						<p>	Aprendizado, conhecimento e experiência, foram obtidos de diferentes formas para mim, por isso cuido para que estes tesouros 
+							também sejam passados adiante de formas diversas:
+						</p>
+							<ul>
+								<li>Gratuitamente, para retribuir à humanidade tudo o que recebi e aprendi, em vários <span class="italico">websites</span> de conteúdos;</li>
+								<li>A custo baixo, em livros, vídeos e cursos à distância, para viabilizar meus projetos e iniciativas de desenvolvimento do negócio;</li>
+								<li>A preço justo, nos processos individuais e em treinamentos presenciais, para que eu consiga me manter e continuar estudando e aprendendo 
+									e ser capaz de tornar os meus recursos cada vez mais efetivos, mais valiosos e mais baratos.</li>
+							</ul>
+						<p>	Sonho com um dia em que eu possa compartilhar tudo o que faço sem remuneração financeira alguma, em retribuição à oportunidade impagável de estar 
+							vivo neste mundo abençoado da Providência, mesmo com todos os desafios que enfrentamos diariamente, que contribuem para colocar em perspectiva 
+							aquilo que chamamos de sofrimentos: antes de perdermos qualquer coisa ou qualquer pessoa neste mundo, devemos nos lembrar que as recebemos!
+						</p>
+				</div>
+				</article>	
+				
+				<article data-art-box id="art15" class="art15 escondido">	
+					<a id="onde" class="ancoras">.</a>
+					<div class="onde" style="border: 2px solid blue">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/L_AraKUCY2E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<!-- Onde? -->
+						<p>	Disponíveis nos sites Despertare (desenvolvimento pessoal) e Emppoderare (desenvolvimento profissional) e nas cidades brasileiras 
+							de maior IDH.
+						</p>
+					</div>
+				</article>	
+				
+				<article data-art-box id="art16" class="art16 escondido">	
+					<a id="quando" class="ancoras">.</a>
+					<div class="quando" style="border: 2px solid pink">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/t9F39PUrP0s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<!-- Quando? -->
+							<ul>
+								<li>Imediatamente nos conteúdos disponíveis em nossos canais de comunicação eletrônica;</li>
+								<li>Em eventos abertos previamente agendados em nossa programação;</li>
+								<li>Sob agendamento para os atendimentos individuais, em grupos ou para turmas fechadas em organizações.</li>
+							</ul>
+					</div>
+				</article>	
+				
+				<article data-art-box id="art17" class="art17 escondido">	
+					<a id="agenda" class="ancoras">.</a>
+					<div class="agenda" style="border: 2px solid darkblue">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/FJ-od-MY3t0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<!-- Agenda de eventos -->
+						<p>	Programas de desenvolvimento pessoal e profissional:</p>
+					</div>
+				</article>	
+				
+	<!-- ======================================================================================================== -->
+
+				<!-- Conteúdos da seção LOJA -->
+				<a id="compra" name="compra" class="ancoras">.</a>
+				
+				<article data-art-box id="art26" class="art26 escondido">	
+					<a id="livros" name="livros" class="ancoras"></a>
+					<a id="cadastramento" class="ancoras"></a>
+					<div class="cadastramento" style="border: 2px solid brown">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/rett8h3QsR4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<p>	
+							livros disponíveis
+						</p>
+
+					</div>
+				</article>	
+				
+				<article data-art-box id="art27" class="art27 escondido">	
+					<a id="inspiracao" class="ancoras">.</a>
+					<div class="videos" style="border: 2px solid green">
+						<p class="sites"><iframe class="frame-video" src="https://www.youtube.com/embed/rett8h3QsR4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<p>	
+							Sessão inspirando-se: Educação continuada
+						</p>
+
+					</div>
+				</article>	
+				
+				<article data-art-box id="art28" class="art28 escondido">	
+					<a id="livros" name="livros" class="ancoras"></a>
+					<a id="cadastramento" class="ancoras"></a>
+					<div class="cadastramento" style="border: 2px solid brown">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/rett8h3QsR4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<p>	
+							cursos presenciais
+						</p>
+
+					</div>
+				</article>	
+				
+				<article data-art-box id="art29" class="art29 escondido">	
+					<a id="inspiracao" class="ancoras">.</a>
+					<div class="videos" style="border: 2px solid green">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/nZ7ijCjE-kI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<p>	
+							cursos EaD
+						</p>
+
+					</div>
+				</article>	
+				
+
+
+	<!-- ======================================================================================================== -->
+
+				<!-- Conteúdos da seção COMUNIDADE -->
+				<article data-art-box id="art31" class="art31 escondido">	
+					<a id="contato" class="ancoras">.</a>
+					<div class="contato" style="border: 2px solid gray">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/yuqx2QO9NVg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<p>	
+							Contato
+						</p>
+
+						
+					</div>
+				</article>	
+				
+				<article data-art-box id="art32" class="art32 escondido">	
+					<a id="comunidade" name="comunidade" class="ancoras"></a>
+					<a id="cadastramento" class="ancoras"></a>
+					<div class="cadastramento" style="border: 2px solid brown">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/nZ7ijCjE-kI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<p>	Newsletter
+							Cadastre-se em nossa <span class="italico">newsletter</span> para receber nossas mensagens, promoções e conteúdos
+							Sites de conteúdo e de empresas parceiras
+						</p>
+					</div>
+				</article>	
+				
+				<article data-art-box id="art33" class="art33 escondido">	
+					<a id="sites" class="ancoras">.</a>
+					<div class="sites" style="border: 2px solid red">
+						<p class="sites"><iframe class="frame-video" src="https://www.youtube.com/embed/rett8h3QsR4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<p>
+							Sites de conteúdo
+						</p>
+
+						
+					</div>
+				</article>	
+				
+
+				<article data-art-box id="art34" class="art34 escondido">	
+					<a id="videos" class="ancoras">.</a>
+					<div class="videos" style="border: 2px solid green">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/r1g6HbOgFpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<p>	
+							Blog
+						</p>
+
+						
+					</div>
+				</article>	
+				
+				<article data-art-box id="art35" class="art35 escondido">	
+					<a id="redessociais" class="ancoras">.</a>
+					<div class="redes" style="border: 2px solid gray">
+						<p class="videos"><iframe class="frame-video" src="https://www.youtube.com/embed/9amGwmLoub4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+						<p>	
+							Redes sociais
+						</p>
+
+					</div>
+				</article>	
+				
+			</main>
+	<!--
+
+							<a id="link40" class="link-item" data-ancora="contato" href="#">Contato</a> 
+							<a id="link41" class="link-item" data-ancora="cadastramento" href="#">Cadastramento na comunidade</a> 
+							<a id="link42" class="link-item" data-ancora="sites" href="#"><span class="italico">Sites</span> de conteúdo</a>
+							<a id="link43" class="link-item" data-ancora="blog" href="#"><span class="italico">Blog</span></a>
+							<a id="link44" class="link-item" data-ancora="forum" href="#">Fórum</a>
+							<a id="link45" class="link-item" data-ancora="redes" href="#">Redes sociais</a>
+
+							
+							
+	  <body>
+		<header class="menu">
+
+		</header>
+
+		<main>
+		  <section>
+			<article>
+
+			</article>
+		  </section>
+		</main>
+	-->
+
+
+			<footer>
+				<div class="redesocial">
+					<a class="redesocial-item" href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-square face"></i></a>
+					<a class="redesocial-item" href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+					<a class="redesocial-item" href="#" target="_blank" title="Linkedin"><i class="fab fa-linkedin linkedin"></i></a>
+					<a class="redesocial-item" href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+					<a class="redesocial-item" href="#" target="_blank" title="Youtube""><i class="fab fa-youtube"></i></a>
+				</div>
+				<span class="footer-contatos-box">
+				<div class="footer-contatos">
+					<a class="footer-contatos-first" href="http://api.whatsapp.com/send?1=pt_BR&phone=5511972068800" target="_blank"><i class="fab fa-whatsapp whats"></i>(11) 97206-8800</a>
+					<span>(11) 4112-3911</span>
+				</div>
+				<div class="footer-contatos">
+					<span class="footer-contatos-first"><a href="mailto:walther@kerth.com.br" target="_blank">walther@kerth.com.br</a></span>
+					<span><a href="http://www.softwareshumanos.com.br" target="_blank">www.softwareshumanos.com.br</a></span>
+				</div>
+				</span>
+			</footer>
+		</div>
+	</section>
+
+		
+		<script>
+			
+/*			
+			// script que faz os links internos do site linguição irem para as âncoras de forma suave e lenta
+			document.querySelectorAll('[data-ancora]').forEach(function (anchor) {
+			  anchor.addEventListener('click', function(e) {
+				  e.preventDefault(); //colocado aqui para evitar a ida direta à âncora
+				document.getElementById(this.getAttribute('data-ancora')).scrollIntoView({
+				//document.querySelector(this.getAttribute('href')).scrollIntoView
+				  behavior: 'smooth', block: 'start', inline: 'nearest'
+				});
+			  });
+			});
+
+			
+			
+			
+			//Código relacionado ao menu
+			menuAberto = false;
+			function alternarMenu(){
+			  var links = document.getElementById('menu-itens');
+			  var closeMenu = document.getElementById('close-menu');
+			  if(menuAberto){
+				links.classList.remove("menu-aberto");
+				closeMenu.style.display = "none";
+			  }else{
+				links.classList.add("menu-aberto");
+				closeMenu.style.display = "block";
+			  }
+			  menuAberto = !menuAberto;
+			  return false;
+			}
+			function fecharMenu(){
+			  var links = document.getElementById('menu-itens');
+			  links.classList.remove("menu-aberto");
+			  menuAberto = false;
+			  var closeMenu = document.getElementById('close-menu');
+			  closeMenu.style.display = "none";
+			}
+			var closeMenu = document.getElementById('close-menu');
+			closeMenu.addEventListener('click', function(e) {
+			  fecharMenu();
+			}, false);
+
+
+
+			//Sobre o modal
+			var boxModal = document.getElementById('box-modal');
+			boxModal.addEventListener('touchmove', function(e) {
+			  e.preventDefault();
+			}, false);
+			var modalClose = document.getElementById('modal-close');
+			modalClose.addEventListener('click', function(e) {
+			  e.preventDefault();
+			  closeModal();
+			}, false);
+			var modalCloseIco = document.getElementById('modal-close-ico');
+			modalCloseIco.addEventListener('click', function(e) {
+			  e.preventDefault();
+			  closeModal();
+			}, false);
+			var modalButton = document.getElementById('modal-button');
+			modalButton.addEventListener('click', function(e) {
+			  e.preventDefault();
+			  closeModal();
+			}, false);
+			function closeModal(){
+			  var modal = document.getElementById('box-modal');
+			  modal.style.display = "none";
+			}
+			var btnNews = document.getElementById('news-button');
+			btnNews.addEventListener('click', function(e) {
+			  e.preventDefault();
+			  showModal();
+			}, false);
+			function showModal(){
+			  var modal = document.getElementById('box-modal');
+			  modal.style.display = "flex";
+			}
+
+
+
+			//Relacionado à setinha
+			var arrowCima = true;
+			var arrow = document.getElementById('banner-arrow');
+			var idAnime = setInterval(animaArrow, 1000);
+			function animaArrow(){
+			  if(arrowCima){
+				arrow.classList.add("banner-arrow-alt");
+				arrowCima = false;
+			  }else{
+				arrow.classList.remove("banner-arrow-alt");
+				arrowCima = true;
+			  }
+			}
+			/*
+			arrow.addEventListener('click', function(e) {
+			  e.preventDefault();
+			  document.getElementById(this.getAttribute("data-ancora")).scrollIntoView({
+				  behavior: 'smooth', block: 'start', inline: 'nearest'
+			  });
+			}, false);
+			*/
+
+
+
+
+			//Referente às ancoras da página
+			document.querySelectorAll('[data-ancora]').forEach(anchor => {
+				anchor.addEventListener('click', function (e) {
+					e.preventDefault();
+					fecharMenu();
+					document.getElementById(this.getAttribute('data-ancora')).scrollIntoView({
+						behavior: 'smooth', block: 'start', inline: 'nearest'
+					});
+				});
+			});
+			
+			
+			//Referente às ancoras da página
+			document.querySelectorAll('[data-submenu]').forEach(anchor => {
+				anchor.addEventListener('mouseover', function (e) {
+					document.getElementById(this.getAttribute('data-submenu')).classList.add("submenu-aberto");
+				});
+			});
+			
+			//Referente às ancoras da página
+			document.querySelectorAll('[data-submenu]').forEach(anchor => {
+				anchor.addEventListener('mouseleave', function (e) {
+					document.getElementById(this.getAttribute('data-submenu')).classList.remove("submenu-aberto");
+				});
+			});
+
+			
+			
+			menuAberto = false;
+			function alternarMenu(){
+			  var links = document.getElementById('menu-box');
+			  //var closeMenu = document.getElementById('close-menu');
+			  if(menuAberto){
+				links.classList.remove("menu-box-aberto");
+				//closeMenu.style.display = "none";
+			  }else{
+				links.classList.add("menu-box-aberto");
+				//closeMenu.style.display = "block";
+			  }
+			  menuAberto = !menuAberto;
+			  return false;
+			}
+			
+			
+			
+			function fecharMenu(){
+				var links = document.getElementById('menu-box');
+				links.classList.remove("menu-box-aberto");
+				menuAberto = false;
+			}
+			
+			
+			
+			
+			var divSumir = document.getElementById('agradecimento');
+			var idAnime = setInterval(animaArrow, 5000);
+			function animaArrow(){
+			  divSumir.style.display = "none";
+			  clearInterval(idAnime);
+			}
+			var idAnime2 = setInterval(animaArrow2, 2000);
+			function animaArrow2(){
+			  divSumir.style.opacity = "0";
+			  clearInterval(idAnime2);
+			}
+			
+			
+			
+			//Referente aos links do submenu da versão desktop
+			if(screen.width > 960){
+			//alert("OI");
+				document.querySelectorAll('[data-art]').forEach(subitem => {
+					subitem.addEventListener('click', function (e) {
+						e.preventDefault();
+						document.querySelectorAll('[data-art-box]').forEach(artigo => {
+							artigo.style.display = "none";
+						});
+						//document.getElementById('inicio').style.display = "none";
+						document.getElementById(this.getAttribute('data-art')).style.display = "flex";
+						
+						listaSubmenu = document.getElementsByClassName("submenu");
+						var listaSubmenuArr = Array.from(listaSubmenu);
+						listaSubmenuArr.forEach(submenu => {
+							submenu.classList.remove("submenu-aberto");
+						});
+						
+					});
+				});
+			}
+
+		
+		</script>
+	</body>
+</html>
+
